@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv("dataset_telemetry_clean.csv")
+df = pd.read_csv("dataset_telemetry.csv")
 
 df_cart = df[df['action'] == 'cart']
 
@@ -126,5 +126,6 @@ for i, v in enumerate(avg_age.values):
     plt.text(i, v/2, f'{v:.1f}', ha='center', va='center', color='white')
 
 plt.show()
+
 
 
